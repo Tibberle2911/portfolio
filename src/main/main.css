@@ -56,7 +56,7 @@ html {
 
 @font-face {
   font-family: MoonWalkerPersonalUse;
-  src: url(../moon-walker-font/MoonWalkerPersonalUse-oKzz.ttf); }
+  src: url(./moon-walker-font/MoonWalkerPersonalUse-oKzz.ttf); }
 
 h1 {
   font-family: MoonWalkerPersonalUse;
