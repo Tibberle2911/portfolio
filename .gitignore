@@ -3,3 +3,5 @@ src/scss/
 package-lock.json
 package.json
 start-server.js
+src/main/main.html
+src/main/main.css
