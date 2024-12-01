@@ -1,7 +1,4 @@
-node_modules/
-src/main/style.css
-src/scss/
-package-lock.json
-package.json
-start-server.js
-src/main/main.html
+/node_modules
+/build
+/package-lock.json
+/package.json
