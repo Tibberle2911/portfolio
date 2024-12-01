@@ -1,0 +1,95 @@
+@import url("../../root.css");
+
+/* DropdownMenu */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  cursor: var(--cursor-hover);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown-item {
+  padding: var(--spacing-small);
+  text-decoration: none;
+  color: var(--text-color-light);
+  display: block;
+  transition: var(--transition);
+  cursor: var(--cursor-hover);
+}
+
+.dropdown-item:hover {
+  background-color: var(--navbar-text-dark);
+}
+
+/* Primary Button Styling */
+.primary-button {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-large);
+  margin-top: 12px;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ffb300, #ff6f00);
+  color: var(--text-color-dark);
+  border: none;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: var(--cursor-hover);
+}
+
+/* Button Hover Effect */
+.primary-button:hover {
+  background: linear-gradient(135deg, #ff6f00, #ffb300);
+  transform: scale(1.05) rotate(3deg);
+  animation: hoverAnimation 0.5s;
+}
+
+/* Button Active Effect */
+.primary-button:active {
+  transform: scale(0.98) rotate(-3deg);
+  animation: activeAnimation 0.5s;
+}
+
+/* Button Focus Effect */
+.primary-button:focus {
+  outline: none;
+}
+
+/* Animation on Hover */
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1) rotate(0);
+    background: linear-gradient(135deg, #ffb300, #ff6f00);
+  }
+  100% {
+    transform: scale(1.05) rotate(3deg);
+    background: linear-gradient(135deg, #ff6f00, #ffb300);
+  }
+}
+
+/* Animation on Active Click */
+@keyframes activeAnimation {
+  0% {
+    transform: scale(1) rotate(0);
+    background: linear-gradient(135deg, #ffb300, #ff6f00);
+  }
+  100% {
+    transform: scale(0.98) rotate(-3deg);
+    background: linear-gradient(135deg, #ff6f00, #ffb300);
+  }
+}

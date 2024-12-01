@@ -1,0 +1,63 @@
+@import url("../../root.css");
+
+/* Expertise Section */
+
+/* Container for the boxes */
+.expertise-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+@media (min-width: 800px) {
+  .expertise-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-medium);
+  }
+}
+
+/* Individual box with ghost effect */
+.expertise-box {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--color-border-translucent);
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 800px) {
+  .expertise-box {
+    padding: var(--spacing-small) var(--spacing-xsmall);
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.expertise-box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-small);
+  position: relative;
+}
+
+.expertise-box h3::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 50%;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: var(--border-radius);
+}
+
+/* Icon Styling */
+.expertise-icon {
+  font-size: var(--font-size-subheading);
+}

@@ -1,0 +1,31 @@
+@import url("../../root.css");
+
+/* Contact Section */
+.contact-section p {
+  font-size: var(--font-size-paragraph);
+  margin-bottom: var(--spacing-medium);
+}
+
+.social-links {
+  margin-top: var(--spacing-large);
+  transition: 0;
+}
+
+.social-links a {
+  margin: 0 var(--spacing-small);
+  color: inherit;
+  font-size: 32px;
+  text-decoration: none;
+  cursor: var(--cursor-hover);
+}
+
+@media (max-width: 800px) {
+  .social-links a {
+    font-size: 24px;
+  }
+}
+
+.social-links a:hover {
+  transition: var(--transition);
+  color: var(--color-hover-accent);
+}

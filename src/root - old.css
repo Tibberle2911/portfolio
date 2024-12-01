@@ -1,0 +1,169 @@
+/* Merged Global Styles using CSS Variables */
+:root {
+  /* Fonts */
+  --font-primary: "Hind", sans-serif;
+  --font-family-heading: "Oswald", sans-serif;
+  --logo-font: "Moon Walker Personal Use";
+
+  /* Font Sizes */
+  --font-size-heading: 64px;
+  --font-size-headingTwo: 48px;
+  --font-size-subheading: 20px;
+  --font-size-paragraph: 18px;
+  --font-size-content: 16px;
+  --font-size-small: 14px;
+  --logo-font-size: 48px;
+
+  /* Font Weights */
+  --font-weight-bold: 600;
+
+  /* Line Height */
+  --line-height: 1.6;
+  --logo-line-height: 130%;
+  --line-height-paragraph: 40px;
+
+  /* Colors */
+  --text-color-light: #000000;
+  --text-color-dark: #ffffff;
+  --color-text: #fff;
+  --color-text-grey: #d4d4d4;
+  --text-color-item: #333;
+  --color-scroll-message: #717171;
+  --color-dot-inactive: #bbb;
+  --color-dot-active: #717171;
+  --color-hover-accent: #ffd700;
+  --color-border: rgba(255, 255, 255, 0.3);
+  --color-border-author-img: #ffd700;
+  --border-color-translucent: rgba(255, 255, 255, 0.2);
+
+  /* Backgrounds */
+  --background-light: linear-gradient(135deg, #ffffff, #e9e8e8);
+  --background-dark: linear-gradient(135deg, #121212, #2c2c2c);
+  --background-color-dropdown: #ffffff;
+  --background-light-translucent: rgba(255, 255, 255, 0.3);
+  --background-dark-translucent: rgba(0, 0, 0, 0.3);
+  --background-default-translucent: rgba(255, 255, 255, 0.15);
+  --background-light-mode-button: rgba(0, 0, 0, 0.8);
+  --background-dark-mode-button: rgba(255, 255, 255, 0.2);
+
+  /* Navbar */
+  --navbar-width: 200px;
+  --navbar-bg-light: rgba(0, 0, 0, 0.8);
+  --navbar-bg-dark: rgba(255, 255, 255, 0.2);
+  --navbar-text-light: #ffffff;
+  --navbar-text-dark: #e9e8e8;
+
+  /* Cursors */
+  --cursor-default: url("./mouse.svg"), auto;
+  --cursor-hover: url("./mouseHover.svg"), auto;
+
+  /* Transition Durations */
+  --transition-duration: 0.5s;
+  --transition-duration-bg: 0.5s;
+  --transition-duration-color: 0.5s;
+  --transition-color-duration: 0.3s;
+  --transition-opacity-duration: 0.3s;
+
+  /* Opacity */
+  --blur-opacity: 0.8;
+  --opacity-low: 0.8;
+  --opacity-hover: 1;
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --slider-shadow: -3px 1px 15px rgba(0, 0, 0, 0.3);
+  --slider-shadow-checked: 0 0 8px rgba(255, 235, 59, 0.7);
+
+  /* Borders */
+  --border-radius: 8px;
+  --border-radius-circle: 50%;
+  --border-radius-small: 8px;
+  --border-width-author-img: 8px;
+  --line-width: 1px;
+  --line-color-light: #000000;
+  --line-color-dark: #ffffff;
+
+  /* Spacing */
+  --margin-xlarge: 48px;
+  --margin-large: 32px;
+  --margin-medium: 24px;
+  --margin-small: 16px;
+  --margin-xsmall: 8px;
+  --margin-top-large: 24px;
+  --padding-zero: 0;
+  --padding-xsmall: 8px;
+  --padding-medium: 16px;
+  --padding-large: 24px;
+  --padding-item: 8px 16px;
+  --gap-large: 32px;
+  --gap-medium: 24px;
+
+  /* Toggle Switch */
+  --toggle-width: 70px;
+  --toggle-height: 36px;
+  --toggle-border-radius: 36px;
+  --toggle-bg-light: linear-gradient(135deg, #ffd700, #ffa500);
+  --toggle-bg-dark: linear-gradient(135deg, #333, #1e1e1e);
+  --slider-width: 28px;
+  --slider-height: 28px;
+  --slider-left: 4px;
+  --slider-bottom: 4px;
+  --slider-bg-checked: #ffeb3b;
+
+  /* Icons */
+  --icon-size: 20px;
+  --icon-sun-color: #ffd700;
+  --icon-moon-color: #ffeb3b;
+
+  /* Misc */
+  --symbol-selected: "❖";
+  --highlight-color: #ffd700;
+  --hover-bg-color: #ffb300;
+  --hover-color: #ffd700;
+  --hover-scale: 1.05;
+  --backdrop-filter: blur(15px);
+
+  /* Layout */
+  --height-full: 100vh;
+  --height-author-img: 200px;
+  --width-author-img: 200px;
+  --position-relative: relative;
+  --position-absolute: absolute;
+  --bottom-position: 48px;
+  --z-index-high: 10;
+  --overflow-hidden: hidden;
+
+  /* Animations */
+  --animation-duration: 1.5s;
+  --animation-timing: ease-out;
+  --keyframe-transform-start: -24px;
+  --keyframe-transform-mid: 0;
+  --keyframe-transform-end: 24px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --font-size-heading: 40px;
+    --font-size-headingTwo: 32px;
+    --font-size-paragraph: 16px;
+    --font-size-small: 12px;
+    --toggle-width: 66px;
+    --toggle-height: 32px;
+    --slider-width: 24px;
+    --slider-height: 24px;
+    --slider-left: 4px;
+    --slider-bottom: 4px;
+    --logo-font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --font-size-heading: 32px;
+    --font-size-headingTwo: 24px;
+    --font-size-subheading: 16px;
+    --font-size-paragraph: 14px;
+  }
+}

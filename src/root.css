@@ -1,0 +1,104 @@
+:root {
+  /* Fonts */
+  --font-primary: "Hind", sans-serif;
+  --font-family-heading: "Oswald", sans-serif;
+  --logo-font: "Moon Walker Personal Use";
+
+  /* Common Sizes */
+  --font-size-small: 14px;
+  --font-size-content: 16px;
+  --font-size-paragraph: 18px;
+  --font-size-subheading: 20px;
+  --font-size-headingTwo: 48px;
+  --font-size-heading: 64px;
+  --logo-font-size: 48px;
+
+  /* Font Weights */
+  --font-weight-bold: 600;
+
+  /* Line Heights */
+  --line-height-default: 1.6;
+  --line-height-paragraph: 40px;
+
+  /* Colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey-light: #d4d4d4;
+  --color-grey-dark: #717171;
+  --color-accent: #ffd700;
+  --color-accent-light: #ffeb3b;
+  --color-border-translucent: rgba(255, 255, 255, 0.2);
+  --color-background-translucent: rgba(255, 255, 255, 0.3);
+
+  /* Assign colors */
+  --text-color-light: var(--color-black);
+  --text-color-dark: var(--color-white);
+  --color-scroll-message: var(--color-grey-dark);
+  --color-dot-inactive: #bbb;
+  --color-dot-active: var(--color-grey-dark);
+  --color-hover-accent: var(--color-accent);
+  --color-border: rgba(255, 255, 255, 0.3);
+
+  /* Backgrounds */
+  --background-light: linear-gradient(135deg, var(--color-white), #e9e8e8);
+  --background-dark: linear-gradient(135deg, #121212, #2c2c2c);
+  --background-light-translucent: var(--color-background-translucent);
+  --background-dark-translucent: rgba(0, 0, 0, 0.3);
+
+  /* Navbar */
+  --navbar-width: 200px;
+  --navbar-bg-light: rgba(0, 0, 0, 0.8);
+  --navbar-bg-dark: var(--color-border-translucent);
+  --navbar-text-light: var(--color-white);
+  --navbar-text-dark: #e9e8e8;
+
+  /* Cursor */
+  --cursor-default: url("./mouse.svg"), auto;
+  --cursor-hover: url("./mouseHover.svg"), auto;
+
+  /* Transition */
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Opacity */
+  --opacity-default: 0.8;
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Borders */
+  --border-radius: 8px;
+  --border-radius-circle: 50%;
+  --line-width: 1px;
+
+  /* Spacing */
+  --spacing-xsmall: 8px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 32px;
+  --spacing-xlarge: 48px;
+
+  /* Icons */
+  --icon-size: 20px;
+
+  /* Layout */
+  --height-full: 100vh;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --font-size-heading: 40px;
+    --font-size-headingTwo: 32px;
+    --font-size-paragraph: var(--font-size-content);
+    --logo-font-size: 40px;
+    --font-size-small: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --font-size-heading: 32px;
+    --font-size-headingTwo: 24px;
+    --font-size-subheading: 16px;
+    --font-size-paragraph: 14px;
+  }
+}

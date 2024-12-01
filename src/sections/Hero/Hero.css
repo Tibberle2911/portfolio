@@ -1,0 +1,54 @@
+@import url("../../root.css");
+
+/* Author Image Container */
+.author-image-container {
+  border-radius: var(--border-radius-circle);
+}
+
+/* Author Image Styling */
+.author-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
+  border: var(--spacing-xsmall) solid var(--color-accent);
+}
+
+/* Scroll Message Container */
+.scroll-message-container {
+  position: absolute;
+  bottom: 48px;
+  z-index: 10;
+  animation: fadeInUp 1.5s ease-out infinite;
+}
+
+@media (max-width: 800px) {
+  .scroll-message-container {
+    bottom: 80px;
+  }
+}
+
+/* Scroll Message Text */
+.scroll-message {
+  color: var(--color-scroll-message);
+  font-weight: var(--font-weight-bold);
+  opacity: 0.8;
+  transition: var(--transition);
+  font-size: var(--font-size-small);
+}
+
+/* Keyframe Animation for Scroll Message */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}

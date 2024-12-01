@@ -1,0 +1,94 @@
+@import url("../../root.css");
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: var(--spacing-xlarge);
+  right: var(--spacing-xlarge);
+  z-index: 10;
+  width: auto;
+  height: fit-content;
+  padding: 0 var(--spacing-medium);
+  font-size: var(--font-size-small);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: initial;
+    padding: var(--spacing-xsmall) 0;
+    border-radius: 0;
+  }
+}
+
+.light-mode .navbar {
+  background-color: var(--navbar-bg-light);
+  color: var(--navbar-text-light);
+}
+
+.dark-mode .navbar {
+  background-color: var(--navbar-bg-dark);
+  color: var(--navbar-text-dark);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-small);
+}
+
+@media (max-width: 800px) {
+  .navbar ul {
+    justify-content: space-evenly;
+  }
+}
+
+.navbar li {
+  padding: var(--spacing-small);
+  cursor: var(--cursor-hover);
+  transition: var(--transition);
+  position: relative;
+  opacity: 0.8;
+  transition: none;
+}
+
+/* Hover Effects */
+.navbar li:hover {
+  color: var(--color-hover-accent);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Blur Unselected Items */
+.navbar li:not(.active) {
+  filter: blur(0.5px);
+}
+
+/* Active State */
+.navbar li.active {
+  color: var(--color-hover-accent);
+  font-weight: bold;
+  filter: none;
+}
+
+/* Adding Symbols before the selected items */
+.navbar li.active::before {
+  content: "❖";
+  color: var(--color-hover-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  .navbar li.active::before {
+    left: 2px;
+  }
+}

@@ -1,0 +1,11 @@
+/* Default scrolling for the project page */
+body.default-scroll {
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+/* Custom scrolling for other pages */
+body.custom-scroll {
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}

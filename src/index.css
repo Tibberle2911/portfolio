@@ -1,0 +1,119 @@
+@import url("./root.css");
+
+/* Global Styles */
+body {
+  font-family: var(--font-primary);
+  line-height: var(--line-height-default);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: var(--cursor-default);
+  transition: var(--transition);
+}
+
+main {
+  width: 100%;
+}
+
+/* Light Mode */
+.light-mode main {
+  background: var(--background-light);
+}
+
+/* Dark Mode */
+.dark-mode main {
+  background: var(--background-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-heading);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-large);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: var(--font-size-headingTwo);
+  margin-bottom: var(--spacing-large);
+}
+
+@media (max-width: 800px) {
+  h2 {
+    margin-bottom: var(--spacing-medium);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-subheading);
+}
+
+p {
+  font-size: var(--font-size-paragraph);
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Light Mode */
+.light-mode {
+  background: var(--background-light);
+  color: var(--text-color-light);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: var(--background-dark);
+  color: var(--text-color-dark);
+}
+
+/* Full-Page Section Styles */
+section {
+  max-width: 1344px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 var(--spacing-large);
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 0 var(--spacing-small);
+  }
+}
+
+/* In your CSS (index.css or a separate file) */
+.mobile-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-hover-accent);
+  color: var(--text-color-light);
+  text-align: center;
+  height: 100vh;
+  padding: var(--spacing-small);
+  z-index: 1000;
+  p {
+    font-weight: bold;
+    font-size: var(--font-size-headingTwo);
+  }
+}

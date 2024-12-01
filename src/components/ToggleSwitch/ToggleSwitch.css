@@ -1,0 +1,130 @@
+@import url("../../root.css");
+
+/* Toggle Switch Container */
+.toggle-switch-container {
+  display: flex;
+  gap: var(--spacing-medium);
+  position: fixed;
+  top: var(--spacing-xlarge);
+  left: var(--spacing-xlarge);
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .toggle-switch-container {
+    top: var(--spacing-medium);
+    left: var(--spacing-medium);
+  }
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 36px;
+}
+
+@media (max-width: 800px) {
+  .toggle-switch {
+    width: 66px;
+    height: 32px;
+  }
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: var(--cursor-hover);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xsmall);
+  transition: var(--transition);
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-circle);
+  transition: var(--transition);
+  box-shadow: -3px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 800px) {
+  .slider:before {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+input:checked + .slider {
+  background: linear-gradient(135deg, #333, #1e1e1e);
+  box-shadow: -3px 1px 15px var(--color-accent);
+}
+
+input:checked + .slider:before {
+  transform: translateX(34px);
+  background-color: var(--color-accent-light);
+  box-shadow: 0 0 8px rgba(255, 235, 59, 0.7);
+}
+
+.slider .icon-sun,
+.slider .icon-moon {
+  font-size: var(--icon-size);
+  opacity: 0;
+  transition: var(--transition);
+  height: 24px;
+}
+
+.slider .icon-sun {
+  color: var(--color-accent);
+}
+
+.slider .icon-moon {
+  color: var(--color-accent-light);
+}
+
+input:checked + .slider .icon-sun {
+  opacity: 1;
+}
+
+input:not(:checked) + .slider .icon-moon {
+  opacity: 1;
+}
+
+/* Logo Styling */
+.logo {
+  font-family: var(--logo-font);
+  font-size: var(--logo-font-size);
+  line-height: 130%;
+}
+
+.line {
+  height: var(--line-height-paragraph);
+  width: var(--line-width);
+  transition: var(--transition);
+}
+
+.light-mode .line {
+  background-color: var(--color-black);
+}
+
+.dark-mode .line {
+  background-color: var(--color-white);
+}
