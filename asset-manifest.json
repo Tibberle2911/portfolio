@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.65598c4f.css",
-    "main.js": "/static/js/main.a1e5e462.js",
+    "main.css": "/static/css/main.bac91ee9.css",
+    "main.js": "/static/js/main.b96ab391.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/MoonWalkerPersonalUse.ttf": "/static/media/MoonWalkerPersonalUse.db5991d3df7260a19861.ttf",
+    "static/media/MoonWalkerPersonalUse.woff": "/static/media/MoonWalkerPersonalUse.0615a8cc66ba1de318c1.woff",
+    "static/media/MoonWalkerPersonalUse.woff2": "/static/media/MoonWalkerPersonalUse.02a6ba3f956351fb69ff.woff2",
     "static/media/mouse.svg": "/static/media/mouse.9739c1aafa4548105454.svg",
     "static/media/mouseHover.svg": "/static/media/mouseHover.74356fe60e97eb66958c.svg",
     "index.html": "/index.html",
-    "main.65598c4f.css.map": "/static/css/main.65598c4f.css.map",
-    "main.a1e5e462.js.map": "/static/js/main.a1e5e462.js.map",
+    "main.bac91ee9.css.map": "/static/css/main.bac91ee9.css.map",
+    "main.b96ab391.js.map": "/static/js/main.b96ab391.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65598c4f.css",
-    "static/js/main.a1e5e462.js"
+    "static/css/main.bac91ee9.css",
+    "static/js/main.b96ab391.js"
   ]
 }
