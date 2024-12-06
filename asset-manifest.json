@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.24b9d1fa.css",
+    "main.css": "/static/css/main.bf277d04.css",
     "main.js": "/static/js/main.983b793d.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/MoonWalkerPersonalUse.ttf": "/static/media/MoonWalkerPersonalUse.db5991d3df7260a19861.ttf",
@@ -9,12 +9,12 @@
     "static/media/mouse.svg": "/static/media/mouse.9739c1aafa4548105454.svg",
     "static/media/mouseHover.svg": "/static/media/mouseHover.74356fe60e97eb66958c.svg",
     "index.html": "/index.html",
-    "main.24b9d1fa.css.map": "/static/css/main.24b9d1fa.css.map",
+    "main.bf277d04.css.map": "/static/css/main.bf277d04.css.map",
     "main.983b793d.js.map": "/static/js/main.983b793d.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24b9d1fa.css",
+    "static/css/main.bf277d04.css",
     "static/js/main.983b793d.js"
   ]
 }
